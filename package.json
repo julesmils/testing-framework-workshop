@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node --require ./mocha.js index.js",
+    "test:pokemon": "node --require ./mocha.js pokemon.test.js"
   },
-  "author": "",
+  "author": "@julesmils",
   "license": "ISC"
 }

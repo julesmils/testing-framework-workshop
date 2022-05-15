@@ -1,4 +1,11 @@
-const { sum, subtract } = require("./math");
+const { sumAsync, subtract } = require("./math");
 
-sum(10, 5);
-subtract(10, 5);
+test("sum should add numbers", async () => {
+  const result = await sumAsync(10, 5);
+  expect(result).toBe(15);
+});
+
+test("subtract should subtract numbers", async () => {
+  const result = subtract(10, 5);
+  expect(result).toBe(5);
+});

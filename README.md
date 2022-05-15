@@ -1,6 +1,6 @@
 # Create your own testing framework
 
-jest concepts:
+Jest Concepts:
 
 ## Assertions
 
